@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 10vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.353);
+}
+.logo img {
+    border: 1px solid white;
+    width: 120px;
+    height: 40px;
+    
+}
+
+ul.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 8px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+ul.tabs li a {
+    font-size: 18px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+ul.tabs li a:hover {
+    border-bottom: 2px solid rgb(158, 48, 191);
+    overflow: hidden;
+}
+
+.homesection {
+    background-image: url('./banner/home-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+.homesection .home{
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homesection .home .text p {
+    font-size: 40px;
+}
+
+.homesection .home .text h1 {
+    font-size: 60px;
+}
+
+.homesection .home .text .Hired-Me {
+    width: 20%;
+    height: 40px;
+    background-color: rgb(158, 48, 191);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.homesection .home .text .Get-CV {
+    width: 20%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgb(158, 48, 191);
+    border-radius: 5px;
+    color: rgb(158, 48, 191);
+    margin: 20px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.homesection .home .text .Hired-Me:hover{
+    background-color: white;
+    border: 1px solid rgb(158, 48, 191);
+    color: rgb(158, 48, 191);
+}
+
+.homesection .home .text .Get-CV:hover{
+    background-color: rgb(158, 48, 191);
+    border: none;
+    color: white;
+}
+
+.homesection .home .body-banner img {
+    width: 500px;
+    
+}
+
+
+.About-section {
+    margin-top: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.About-section .home{
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About-section .home .text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.About-section .home .text h1 {
+    font-size: 60px;
+}
+
+.About-section .home .text .Download-CV {
+    width: 20%;
+    height: 40px;
+    background-color: rgb(158, 48, 191);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.About-section .home .text .Download-CV:hover{
+    background-color: white;
+    border: 1px solid rgb(158, 48, 191);
+    color: rgb(158, 48, 191);
+}
+
+.About-section .home .body-banner img {
+    width: 500px;
+    
+}
+
+.service{
+    margin: 100px 0 150px 0;
+}
+
+.service .service-text{
+    text-align: center;
+    margin: 40px;
+}
+
+.service .service-text h1{
+    font-size: 50px;
+    margin: 20px;
+}
+
+.service .service-text p {
+    font-size: 20px;
+    margin: 0 300px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card .img-text{
+    margin: 30px auto;
+    align-items: center;
+  }
+
+  .card .img-text h1 {
+    margin: 15px auto;
+  }
+  
+  .Portfolio{
+    margin: 100px 0 200px 0;
+  }
+
+  .Portfolio h1{
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+  }
+
+  .Portfolio .portfolio{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 170px;
+    height: 85px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.297);
+}
+
+.contact{
+    padding-top: 80px;
+    padding-left: 50px;
+    background-color: rgb(127, 225, 255);
+    width: 40%;
+}
+
+.contact .contact-flex{
+    display: flex;
+}
+
+.contact .contact-flex span {
+    font-size: 70px;
+    color: rgb(164, 25, 199);
+}
+
+.contact .contact-flex p {
+    width: 150px;font-size: 20px;
+}
+
+.contact .Phone {
+    padding: 50px;
+}
+
+.contact .Phone h2{
+    color: rgb(102, 25, 132);
+}
+
+.Subcribe{
+    margin: 100px 0 ;
+}
+
+.Subcribe h1{
+    text-align: center;
+    margin: 40px;
+    font-size: 60px;
+}
+
+.Subcribe .Update{
+    background-image: url('subscribe-bg.png');
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    align-items: center;    
+    color: white;
+}
+
+.Subcribe .Update .getupdate{
+    text-align: center;
+    padding-top: 110px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.Subcribe .Update p{
+    text-align: center;
+}
+
+.Subcribe .Update form {
+    text-align: center;
+    padding: 30px;
+  }
+  
+.Subcribe .Update input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+  
+.Subcribe .Update button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
